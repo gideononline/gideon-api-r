@@ -4,7 +4,7 @@
 \alias{lookup_gideon_id}
 \title{Finds the GIDEON specific ID for a disease, vaccine, etc.}
 \usage{
-lookup_gideon_id(category, item)
+lookup_gideon_id(category, item, fail_silently = TRUE)
 }
 \arguments{
 \item{category}{One of the following: diseases, drugs, vaccines, agents,
@@ -12,6 +12,8 @@ vectors, vehicles, reservoirs, bacteria, mycobacteria, yeasts,
 countries, regions}
 
 \item{item}{The name of the item}
+
+\item{fail_silently}{Only return NULL instead of all options.}
 }
 \description{
 Finds the GIDEON specific ID for a disease, vaccine, etc.

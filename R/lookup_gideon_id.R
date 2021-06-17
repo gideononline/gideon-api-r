@@ -19,9 +19,10 @@ gideon_category_path_id_name <- list(
 #'     vectors, vehicles, reservoirs, bacteria, mycobacteria, yeasts,
 #'     countries, regions
 #' @param item The name of the item
+#' @param fail_silently Only return NULL instead of all options.
 #'
 #' @export
-lookup_gideon_id <- function(category, item) {
+lookup_gideon_id <- function(category, item, fail_silently = TRUE) {
   if (is.element(category, names(gideon_category_path_id_name))) {
     api_path <- gideon_category_path_id_name[[category]][1]
     item_id <- gideon_category_path_id_name[[category]][2]
@@ -32,6 +33,9 @@ lookup_gideon_id <- function(category, item) {
 
     if (nrow(matches)==1) {
       return(matches[[item_id]])
+    }
+    if (fail_silently) {
+      return(NULL)
     }
     return(matches[1:2])
   }
