@@ -13,12 +13,13 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
-
+#' Queries the GIDEON Informatics API
+#'
+#' @param path The API path according to the API documentation
+#' @param to_dataframe Automatically convert the response to a dataframe.
+#'
+#' @export
 query_gideon_api <- function(path, query = NULL, to_dataframe = TRUE){
-  #' Queries the GIDEON Informatics API
-  #'
-  #' @param path The API path according to the API documentation
-  #' @param to_dataframe Automatically convert the response to a dataframe.
   r <- httr::GET(
     paste('https://api.gideononline.com', path, sep = ''),
     query = query,
@@ -48,14 +49,15 @@ gideon_category_path_id_name <- list(
   regions = c('/travel/regions', 'region_code', 'region')
 )
 
-
+#' Finds the GIDEON specific ID for a disease, vaccine, etc.
+#'
+#' @param category One of the following: diseases, drugs, vaccines, agents,
+#'     vectors, vehicles, reservoirs, bacteria, mycobacteria, yeasts,
+#'     countries, regions
+#' @param item The name of the item
+#'
+#' @export
 lookup_gideon_id <- function(category, item) {
-  #' Finds the GIDEON specific ID for a disease, vaccine, etc.
-  #'
-  #' @param category One of the following: diseases, drugs, vaccines, agents,
-  #'     vectors, vehicles, reservoirs, bacteria, mycobacteria, yeasts,
-  #'     countries, regions
-  #' @param item The name of the item
   if (is.element(category, names(gideon_category_path_id_name))) {
     api_path <- gideon_category_path_id_name[[category]][1]
     item_id <- gideon_category_path_id_name[[category]][2]
