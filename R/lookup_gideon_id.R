@@ -13,7 +13,9 @@ gideon_category_path_id_name <- list(
   regions = c('/travel/regions', 'region_code', 'region')
 )
 
-#' Finds the GIDEON specific ID for a disease, vaccine, etc.
+#' GIDEON Item ID Lookup
+#'
+#' Looks up the ID for a disease, bacteria, etc. in the GIDEON database.
 #'
 #' @param category One of the following: diseases, drugs, vaccines, agents,
 #'     vectors, vehicles, reservoirs, bacteria, mycobacteria, yeasts,

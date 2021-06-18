@@ -2,7 +2,7 @@
 % Please edit documentation in R/lookup_gideon_id.R
 \name{lookup_gideon_id}
 \alias{lookup_gideon_id}
-\title{Finds the GIDEON specific ID for a disease, vaccine, etc.}
+\title{GIDEON Item ID Lookup}
 \usage{
 lookup_gideon_id(category, item, fail_silently = TRUE)
 }
@@ -16,5 +16,5 @@ countries, regions}
 \item{fail_silently}{Only return NULL instead of all options.}
 }
 \description{
-Finds the GIDEON specific ID for a disease, vaccine, etc.
+Looks up the ID for a disease, bacteria, etc. in the GIDEON database.
 }
