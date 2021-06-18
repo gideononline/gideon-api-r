@@ -1,5 +1,6 @@
-#' Queries the GIDEON Informatics API
+#' GIDEON API Query
 #'
+#' Wrapper to the GIDEON API
 #' @param path The API path according to the API documentation
 #' @param query Additional URL query parameters to send as a named list
 #' @param to_dataframe Automatically convert the response to a dataframe.

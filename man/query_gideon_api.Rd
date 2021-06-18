@@ -2,7 +2,7 @@
 % Please edit documentation in R/query_gideon_api.R
 \name{query_gideon_api}
 \alias{query_gideon_api}
-\title{Queries the GIDEON Informatics API}
+\title{GIDEON API Query}
 \usage{
 query_gideon_api(path, query = NULL, to_dataframe = TRUE)
 }
@@ -14,5 +14,5 @@ query_gideon_api(path, query = NULL, to_dataframe = TRUE)
 \item{to_dataframe}{Automatically convert the response to a dataframe.}
 }
 \description{
-Queries the GIDEON Informatics API
+Wrapper to the GIDEON API
 }
