@@ -25,20 +25,27 @@ gideon_category_path_id_name <- list(
 #'
 #' @export
 lookup_gideon_id <- function(category, item, fail_silently = TRUE) {
-  if (is.element(category, names(gideon_category_path_id_name))) {
-    api_path <- gideon_category_path_id_name[[category]][1]
-    item_id <- gideon_category_path_id_name[[category]][2]
-    item_name <- gideon_category_path_id_name[[category]][3]
-
-    matches <- dplyr::filter(gideon::query_gideon_api(api_path),
-                             !!dplyr::sym(item_name) == item)
-
-    if (nrow(matches)==1) {
-      return(matches[[item_id]])
-    }
-    if (fail_silently) {
-      return(NULL)
-    }
-    return(matches[1:2])
+  # Ensure the category is from the list
+  if (!is.element(category, names(gideon_category_path_id_name))) {
+    stop(paste('Category "',
+               category,
+               '" is not one of: ',
+               paste(names(gideon_category_path_id_name), collapse = ', '),
+               sep = ''))
   }
+
+  api_path <- gideon_category_path_id_name[[category]][1]
+  item_id <- gideon_category_path_id_name[[category]][2]
+  item_name <- gideon_category_path_id_name[[category]][3]
+
+  matches <- dplyr::filter(gideon::query_gideon_api(api_path),
+                           !!dplyr::sym(item_name) == item)
+
+  if (nrow(matches)==1) {
+    return(matches[[item_id]])
+  }
+  if (fail_silently) {
+    return(NULL)
+  }
+  return(matches[1:2])
 }
