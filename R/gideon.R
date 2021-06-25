@@ -1,0 +1,34 @@
+#' gideon: A package for accessing the GIDEON API
+#'
+#' The gideon package provides functions to access the GIDEON API without
+#' the need of writing your own REST API queries
+#'
+#' @section Authentication:
+#' Provide your GIDEON API key as a key-value pair in your .Renviron file
+#' as GIDEON_API_KEY=<YOUR API KEY>
+#'
+#' @section GIDEON ID codes:
+#' Many of the items in the GIDEON database use an id code, such as diseases,
+#' bacteria, drugs, etc. Use \code{\link{lookup_gideon_id}} to know what
+#' specific code to use when calling the GIDEON API.
+#'
+#' @section Outbreak functions:
+#' The functions to query outbreaks are:
+#' \itemize{
+#'  \item \code{\link{outbreaks_by_year}},
+#'  \item \code{\link{outbreaks_by_country_year}},
+#'  \item \code{\link{latest_outbreaks_by_country}},
+#'  \item \code{\link{outbreaks_by_disease}},
+#'  \item \code{\link{endemic_countries_by_disease}},
+#'  \item \code{\link{endemic_diseases_by_country}},
+#' }
+#' @section GIDEON access functions:
+#' Functions to access the GIDEON API directly
+#' \itemize{
+#'  \item \code{\link{query_gideon_api}}
+#' }
+#'
+#' @docType package
+#' @name gideon
+NULL
+#> NULL

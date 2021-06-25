@@ -16,6 +16,7 @@ gideon_category_path_id_name <- list(
 #' GIDEON Item ID Lookup
 #'
 #' Looks up the ID for a disease, bacteria, etc. in the GIDEON database.
+#' HINT: Copy and paste the item name from the GIDEON dashboard.
 #'
 #' @param category One of the following: diseases, drugs, vaccines, agents,
 #'     vectors, vehicles, reservoirs, bacteria, mycobacteria, yeasts,

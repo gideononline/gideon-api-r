@@ -17,4 +17,5 @@ countries, regions}
 }
 \description{
 Looks up the ID for a disease, bacteria, etc. in the GIDEON database.
+HINT: Copy and paste the item name from the GIDEON dashboard.
 }
