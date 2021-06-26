@@ -21,13 +21,13 @@ specific code to use when calling the GIDEON API.
 
 ## Outbreak Functions
 The functions to query outbreaks are:
-* outbreaks_by_year
-* outbreaks_by_country_year
-* latest_outbreaks_by_country
-* outbreaks_by_disease
-* endemic_countries_by_disease
-* endemic_diseases_by_country
+*  outbreaks_by_year
+*  outbreaks_by_country_year
+*  latest_outbreaks_by_country
+*  outbreaks_by_disease
+*  endemic_countries_by_disease
+*  endemic_diseases_by_country
  
 ## GIDEON API access functions
 Functions to access the GIDEON API directly
-* query_gideon_api
+*  query_gideon_api
