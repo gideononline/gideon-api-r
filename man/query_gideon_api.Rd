@@ -13,6 +13,13 @@ query_gideon_api(path, query = NULL, to_dataframe = TRUE)
 
 \item{to_dataframe}{Automatically convert the response to a dataframe.}
 }
+\value{
+A dataframe representing the response or a string of the JSON response if
+\code{to_dataframe} is set to \code{FALSE}
+}
 \description{
 Wrapper to the GIDEON API
+}
+\seealso{
+\url{https://api-doc.gideononline.com/}
 }

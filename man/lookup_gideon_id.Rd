@@ -2,20 +2,46 @@
 % Please edit documentation in R/lookup_gideon_id.R
 \name{lookup_gideon_id}
 \alias{lookup_gideon_id}
-\title{GIDEON Item ID Lookup}
+\title{GIDEON Item Identification Code Lookup}
 \usage{
-lookup_gideon_id(category, item, fail_silently = TRUE)
+lookup_gideon_id(category, item = NULL, error_msg = TRUE)
 }
 \arguments{
-\item{category}{One of the following: diseases, drugs, vaccines, agents,
-vectors, vehicles, reservoirs, bacteria, mycobacteria, yeasts,
-countries, regions}
+\item{category}{A string that is one of the following categories: diseases,
+drugs, vaccines, agents, vectors, vehicles, reservoirs, bacteria,
+mycobacteria, yeasts, countries, regions}
 
-\item{item}{The name of the item}
+\item{item}{A string of the name of the item to search. If this parameter is
+omitted, the function will return a dataframe representing all items and
+related GIDEON identification codes.}
 
-\item{fail_silently}{Only return NULL instead of all options.}
+\item{error_msg}{Throw an error message if the lookup does not find the
+specified item rather than returning \code{NULL}.}
+}
+\value{
+\itemize{
+ \item If the \emph{item parameter matches} an entry from the item category,
+     the string or integer code will be returned.
+ \item If the \emph{item parameter fails to match} an entry from the item
+     category, \code{NULL} will be returned.
+ \item If the \emph{item parameter is omitted}, return a dataframe with all
+     items in the category, including the name and code.
+}
 }
 \description{
-Looks up the ID for a disease, bacteria, etc. in the GIDEON database.
+Finds the ID for a disease, bacteria, etc. in the GIDEON database.
 HINT: Copy and paste the item name from the GIDEON dashboard.
+}
+\examples{
+\donttest{
+# Find the disease code given the name.
+ebola_code <- lookup_gideon_id("diseases", "Ebola")
+
+# Find a country code given the country name
+us_code <- lookup_gideon_id("countries", "United States")
+
+# List all the disease vectors
+all_vectors <- lookup_gideon_id("vectors")
+}
+
 }
