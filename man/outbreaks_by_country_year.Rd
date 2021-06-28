@@ -18,6 +18,10 @@ requested country and year.
 \description{
 Disease Outbreaks by Country and Year
 }
+\examples{
+us_country_code <- lookup_gideon_id("countries", "United States")
+outbreaks_by_country_year(us_country_code, 1980)
+}
 \seealso{
 \url{https://api-doc.gideononline.com/#16616aab-57f9-477d-b611-892b7f19cd43}
 

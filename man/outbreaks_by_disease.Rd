@@ -2,7 +2,7 @@
 % Please edit documentation in R/outbreaks.R
 \name{outbreaks_by_disease}
 \alias{outbreaks_by_disease}
-\title{Countries with Given Disease Outbreaks}
+\title{Countries with Specific Disease Outbreaks}
 \usage{
 outbreaks_by_disease(disease)
 }
@@ -14,7 +14,11 @@ Returns list of all countries that have reported outbreaks of a
 disease.
 }
 \description{
-Countries with Given Disease Outbreaks
+Countries with Specific Disease Outbreaks
+}
+\examples{
+amobea_disease_code <- lookup_gideon_id("diseases", "Amoeba - free living")
+outbreaks_by_disease(amobea_disease_code)
 }
 \seealso{
 \url{https://api-doc.gideononline.com/#f1a87f41-a9a4-414a-b6f7-d15c1c8b9331}

@@ -40,7 +40,6 @@ gideon_category_path_id_name <- list(
 #'
 #'
 #' @examples
-#' \donttest{
 #' # Find the disease code given the name.
 #' ebola_code <- lookup_gideon_id("diseases", "Ebola")
 #'
@@ -49,7 +48,6 @@ gideon_category_path_id_name <- list(
 #'
 #' # List all the disease vectors
 #' all_vectors <- lookup_gideon_id("vectors")
-#' }
 #'
 #' @export
 lookup_gideon_id <- function(category, item = NULL, error_msg = TRUE) {

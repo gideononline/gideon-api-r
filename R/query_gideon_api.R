@@ -9,6 +9,18 @@
 #' A dataframe representing the response or a string of the JSON response if
 #' \code{to_dataframe} is set to \code{FALSE}
 #'
+#' @examples
+#' # Most calls only need the path
+#' query_gideon_api("/diseases/10050/incubation-periods")
+#'
+#' # Some calls can include a named list to be used as query parameters
+#' query_gideon_api("/diseases/filter",
+#'                  list(agent=1014,
+#'                       vector="T",
+#'                       vehicle="MI",
+#'                       reservoir="A",
+#'                       country="G100"))
+#'
 #' @seealso \url{https://api-doc.gideononline.com/}
 #'
 #' @export

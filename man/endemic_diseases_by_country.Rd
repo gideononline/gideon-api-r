@@ -15,6 +15,10 @@ Returns the list of all diseases that are endemic to the country.
 \description{
 Diseases Endemic to a Country
 }
+\examples{
+albania_country_code <- lookup_gideon_id("countries", "Albania")
+endemic_diseases_by_country(albania_country_code)
+}
 \seealso{
 \url{https://api-doc.gideononline.com/#feab6f00-e926-49df-9a34-114cfafdf685}
 

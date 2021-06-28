@@ -16,6 +16,19 @@
 #'  will only retrieve diseases that are endemic to the country.
 #' @seealso \url{https://api-doc.gideononline.com/#4272d285-ba04-435d-b7ad-deabe971330e}
 #' @seealso \code{\link{lookup_gideon_id}}
+#'
+#' @examples
+#' # The The user can specify none to all of the parameters
+#' filter_diseases()
+#'
+#' physical_contact_vehicle_code <- lookup_gideon_id("vehicles",
+#'                                                   "Direct physical contact")
+#' filter_diseases(vehicle = physical_contact_vehicle_code)
+#'
+#' mosquito_vector_code <- lookup_gideon_id("vectors", "Mosquito")
+#' us_country_code <- lookup_gideon_id("countries", "United States")
+#' filter_diseases(vector = mosquito_vector_code, country = us_country_code)
+#'
 #' @export
 filter_diseases <- function(agent = NULL, vector = NULL, vehicle = NULL,
                             reservoir = NULL, country = NULL) {

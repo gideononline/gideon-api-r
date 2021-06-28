@@ -16,6 +16,9 @@ year for every country.
 \description{
 Disease Outbreaks by Year
 }
+\examples{
+outbreaks_by_year(1980)
+}
 \seealso{
 \url{https://api-doc.gideononline.com/#038e2b12-0b61-4432-a642-7192a64f8a5c}
 }

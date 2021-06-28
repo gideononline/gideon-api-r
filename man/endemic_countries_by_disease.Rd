@@ -15,6 +15,10 @@ Returns list of all endemic countries of a disease.
 \description{
 Endemic Countries of a Disease
 }
+\examples{
+actinomycosis_disease_code <- lookup_gideon_id("diseases", "Actinomycosis")
+endemic_countries_by_disease(actinomycosis_disease_code)
+}
 \seealso{
 \url{https://api-doc.gideononline.com/#20bc3345-8c15-4cc7-a6a3-24c8ac0ccf49}
 

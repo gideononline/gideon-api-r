@@ -4,6 +4,8 @@
 #' @seealso \url{https://api-doc.gideononline.com/#038e2b12-0b61-4432-a642-7192a64f8a5c}
 #' @return Returns a complete list of all outbreaks that occurred in a requested
 #' year for every country.
+#' @examples
+#' outbreaks_by_year(1980)
 #' @export
 outbreaks_by_year <- function(year) {
   gideon::query_gideon_api('/diseases/outbreaks', list(year = year))
@@ -17,6 +19,9 @@ outbreaks_by_year <- function(year) {
 #' @seealso \code{\link{lookup_gideon_id}}
 #' @return Returns complete list of all outbreaks that were reported in a
 #' requested country and year.
+#' @examples
+#' us_country_code <- lookup_gideon_id("countries", "United States")
+#' outbreaks_by_country_year(us_country_code, 1980)
 #' @export
 outbreaks_by_country_year <- function(country, year) {
   gideon::query_gideon_api(paste('/diseases/outbreaks/distribution',
@@ -32,6 +37,9 @@ outbreaks_by_country_year <- function(country, year) {
 #' @seealso \code{\link{lookup_gideon_id}}
 #' @return Returns information of latest outbreak of every disease for a
 #' requested country.
+#' @examples
+#' albania_country_code <- lookup_gideon_id("countries", "Albania")
+#' latest_outbreaks_by_country(albania_country_code)
 #' @export
 latest_outbreaks_by_country <- function(country) {
   gideon::query_gideon_api(paste('/diseases/countries',
@@ -40,13 +48,16 @@ latest_outbreaks_by_country <- function(country) {
                                  sep = '/'))
 }
 
-#' Countries with Given Disease Outbreaks
+#' Countries with Specific Disease Outbreaks
 #'
 #' @param disease GIDEON disease code
 #' @seealso \url{https://api-doc.gideononline.com/#f1a87f41-a9a4-414a-b6f7-d15c1c8b9331}
 #' @seealso \code{\link{lookup_gideon_id}}
 #' @return Returns list of all countries that have reported outbreaks of a
 #' disease.
+#' @examples
+#' amobea_disease_code <- lookup_gideon_id("diseases", "Amoeba - free living")
+#' outbreaks_by_disease(amobea_disease_code)
 #' @export
 outbreaks_by_disease <- function(disease) {
   gideon::query_gideon_api(paste('/diseases',
@@ -61,6 +72,9 @@ outbreaks_by_disease <- function(disease) {
 #' @seealso \url{https://api-doc.gideononline.com/#20bc3345-8c15-4cc7-a6a3-24c8ac0ccf49}
 #' @seealso \code{\link{lookup_gideon_id}}
 #' @return Returns list of all endemic countries of a disease.
+#' @examples
+#' actinomycosis_disease_code <- lookup_gideon_id("diseases", "Actinomycosis")
+#' endemic_countries_by_disease(actinomycosis_disease_code)
 #' @export
 endemic_countries_by_disease <- function(disease) {
   gideon::query_gideon_api(paste('/diseases',
@@ -75,6 +89,9 @@ endemic_countries_by_disease <- function(disease) {
 #' @seealso \url{https://api-doc.gideononline.com/#feab6f00-e926-49df-9a34-114cfafdf685}
 #' @seealso \code{\link{lookup_gideon_id}}
 #' @return Returns the list of all diseases that are endemic to the country.
+#' @examples
+#' albania_country_code <- lookup_gideon_id("countries", "Albania")
+#' endemic_diseases_by_country(albania_country_code)
 #' @export
 endemic_diseases_by_country <- function(country) {
   gideon::query_gideon_api(paste('/diseases/countries',

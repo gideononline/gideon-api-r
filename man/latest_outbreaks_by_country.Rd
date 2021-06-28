@@ -16,6 +16,10 @@ requested country.
 \description{
 Latest Disease Outbreaks by Country
 }
+\examples{
+albania_country_code <- lookup_gideon_id("countries", "Albania")
+latest_outbreaks_by_country(albania_country_code)
+}
 \seealso{
 \url{https://api-doc.gideononline.com/#a331d79d-c265-48a3-a45a-dbca49c8d38d}
 

@@ -34,7 +34,6 @@
 #' }
 #'
 #' @examples
-#' \donttest{
 #' cholera_code <- lookup_gideon_id("diseases", "Cholera")
 #' cholera_outbreaks <- outbreaks_by_disease(cholera_code)
 #'
@@ -47,7 +46,6 @@
 #'     vector = mosquito_vector_code,
 #'     reservoir = horse_reservoir_code
 #' )
-#' }
 #'
 #' @docType package
 #' @name gideon

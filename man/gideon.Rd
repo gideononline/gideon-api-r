@@ -48,7 +48,6 @@ Functions to access the GIDEON API directly
 }
 
 \examples{
-\donttest{
 cholera_code <- lookup_gideon_id("diseases", "Cholera")
 cholera_outbreaks <- outbreaks_by_disease(cholera_code)
 
@@ -61,7 +60,6 @@ diseases_from_horses_via_mosquitos <- filter_diseases(
     vector = mosquito_vector_code,
     reservoir = horse_reservoir_code
 )
-}
 
 }
 \keyword{internal}

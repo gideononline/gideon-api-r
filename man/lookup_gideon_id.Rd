@@ -33,7 +33,6 @@ Finds the ID for a disease, bacteria, etc. in the GIDEON database.
 HINT: Copy and paste the item name from the GIDEON dashboard.
 }
 \examples{
-\donttest{
 # Find the disease code given the name.
 ebola_code <- lookup_gideon_id("diseases", "Ebola")
 
@@ -42,6 +41,5 @@ us_code <- lookup_gideon_id("countries", "United States")
 
 # List all the disease vectors
 all_vectors <- lookup_gideon_id("vectors")
-}
 
 }
