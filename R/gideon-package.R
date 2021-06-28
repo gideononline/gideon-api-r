@@ -33,26 +33,24 @@
 #'  \item \code{\link{query_gideon_api}}
 #' }
 #'
-#' @section Examples:
-#' ```
-#' library(gideon)
-#' 
+#' @examples
+#' \donttest{
 #' cholera_code <- lookup_gideon_id("diseases", "Cholera")
 #' cholera_outbreaks <- outbreaks_by_disease(cholera_code)
-#' 
+#'
 #' us_country_code <- lookup_gideon_id("countries", "United States")
 #' outbreaks_us_2007 <- outbreaks_by_country_year(us_country_code, 2007)
-#' 
+#'
 #' mosquito_vector_code <- lookup_gideon_id("vectors", "Mosquito")
 #' horse_reservoir_code <- lookup_gideon_id("reservoirs", "Horse")
 #' diseases_from_horses_via_mosquitos <- filter_diseases(
 #'     vector = mosquito_vector_code,
 #'     reservoir = horse_reservoir_code
 #' )
-#' ```
+#' }
 #'
-#' @md
 #' @docType package
 #' @name gideon
-NULL
-#> NULL
+#' @keywords internal
+"_PACKAGE"
+#> [1] "_PACKAGE"
