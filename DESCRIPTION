@@ -1,6 +1,6 @@
 Package: gideon
 Type: Package
-Title: GIDEON Informatics API Wrapper
+Title: GIDEON API Wrapper
 Version: 0.1.0
 Author: GIDEON Informatics
 Maintainer: GIDEON Informatics <sales@gideononline.com>
