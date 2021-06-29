@@ -3,7 +3,18 @@ A package for accessing the GIDEON API using R.
 
 The gideon package provides functions to access the GIDEON API without the need of writing your own REST API queries.
 
-## Installation
+## R Prerequisites
+### R Programming Language
+1. Choose a [CRAN Mirror](https://cran.r-project.org/mirrors.html) to download R
+2. Select the appropriate operating system
+3. Download installer
+    * Windows - Choose the *base* subdirectory
+    * macOS - Choose R-4.\*.\*.pkg for Intel Macs or R-4.\*.\*-arm64.pkg for Apple silicon Macs
+    * Linux - Choose appropriate distribution and follow instructions
+### (Recommended) RStudio
+Download and install [RStudio Desktop](https://www.rstudio.com/products/rstudio/#rstudio-desktop) for a complete R integrated development environment
+
+## GIDEON R Package Installation
 Execute the following commands in the the **R console**:
 1. Install the R devtools package with the command `install.packages("devtools")`
 2. Install the GIDEON R package using `devtools::install_bitbucket("gideononline/gideon-api-r")`
