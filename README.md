@@ -6,7 +6,7 @@ The gideon package provides functions to access the GIDEON API without the need 
 ## Installation
 Execute the following commands in the the **R console**:
 1. Install the R devtools package with the command `install.packages("devtools")`
-2. Install the GIDEON R package using `devtools::install_bitbucket(<PLACEHOLDER FOR GIDEON R REPOSITORY PATH>)`
+2. Install the GIDEON R package using `devtools::install_bitbucket("gideononline/gideon-api-r")`
 3. Load GIDEON R package with `library(gideon)`
 
 ## Package Help
