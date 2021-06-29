@@ -1,4 +1,4 @@
-# GIDEON - R Interface
+# GIDEON - R Interface (BETA)
 A package for accessing the GIDEON API using R.
 
 The gideon package provides functions to access the GIDEON API without the need of writing your own REST API queries.
