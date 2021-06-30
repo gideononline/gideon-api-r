@@ -16,6 +16,7 @@ Download and install [RStudio Desktop](https://www.rstudio.com/products/rstudio/
 
 ## GIDEON R Package Installation
 Execute the following commands in the the **R console**:
+
 1. Install the R devtools package with the command `install.packages("devtools")`
 2. Install the GIDEON R package using `devtools::install_bitbucket("gideononline/gideon-api-r")`
 3. Load GIDEON R package with `library(gideon)`
@@ -34,6 +35,7 @@ Use `lookup_gideon_id` to get specific item code to use when calling the GIDEON 
 
 ## Outbreak Functions
 The functions to query outbreaks are:
+
 * outbreaks_by_year
 * outbreaks_by_country_year
 * latest_outbreaks_by_country
@@ -43,6 +45,7 @@ The functions to query outbreaks are:
  
 ## GIDEON API access functions
 Functions to access the GIDEON API directly
+
 *  query_gideon_api
 
 ## Examples
