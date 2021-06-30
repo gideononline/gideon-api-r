@@ -2,9 +2,12 @@ Package: gideon
 Type: Package
 Title: GIDEON API Wrapper
 Version: 0.1.0
-Author: GIDEON Informatics
-Maintainer: GIDEON Informatics <sales@gideononline.com>
-Description: Interface to connect with the GIDEON Informatics database in R.
+Author: Xander Hirsch
+Maintainer: GIDEON Informatics Inc <info@gideononline.com>
+Description: GIDEON provides epidemiological data going back to 1348 AD. This
+  package provides an interface with the GIDEON API to access its Infectous
+  Disease database within R.
+URL: https://www.gideononline.com/
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
