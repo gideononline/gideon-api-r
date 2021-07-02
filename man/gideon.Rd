@@ -62,4 +62,11 @@ diseases_from_horses_via_mosquitos <- filter_diseases(
 )
 
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://www.gideononline.com/}
+}
+
+}
 \keyword{internal}

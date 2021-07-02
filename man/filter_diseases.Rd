@@ -20,17 +20,19 @@ taxonomic designation.}
 transports an infectious agent from an infected organism or reservoir to a
 susceptible individual or immediate surroundings.}
 
-\item{vehicle}{The mode of transmission for an infectious agent. This
-generally implies a passive and inanimate (i.e., non-vector) mode.}
+\item{vehicle}{GIDEON vehicle code - The mode of transmission for an
+infectious agent. This generally implies a passive and inanimate
+(i.e., non-vector) mode.}
 
-\item{reservoir}{Any animal, arthropod, plant, soil or substance in which an
-infectious agent normally lives and multiplies, on which it depends
-primarily for survival, and where it reproduces itself in such a manner that
-it can be transmitted to a susceptible host.}
+\item{reservoir}{GIDEON reservoir code - Any animal, arthropod, plant, soil
+or substance in which an infectious agent normally lives and multiplies, on
+which it depends primarily for survival, and where it reproduces itself in
+such a manner that it can be transmitted to a susceptible host.}
 
-\item{country}{In general, this list of country names corresponds to accepted
-geographical and political designations. When Country filter is used, it
-will only retrieve diseases that are endemic to the country.}
+\item{country}{GIDEON country code - In general, this list of country names
+corresponds to accepted geographical and political designations. When
+Country filter is used, it will only retrieve diseases that are endemic to
+the country.}
 }
 \description{
 Filter diseases from GIDEON database
