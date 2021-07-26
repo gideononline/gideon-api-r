@@ -18,7 +18,7 @@ Download and install [RStudio Desktop](https://www.rstudio.com/products/rstudio/
 Execute the following commands in the the **R console**:
 
 1. Install the R devtools package with the command `install.packages("devtools")`
-2. Install the GIDEON R package using `devtools::install_bitbucket("gideononline/gideon-api-r")`
+2. Install the GIDEON R package using `devtools::install_github("gideononline/gideon-api-r")`
 3. Load GIDEON R package with `library(gideon)`
 
 ## Package Help
