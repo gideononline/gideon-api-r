@@ -1,3 +1,11 @@
+GIDEON API R wrapper
+
+Copyright 2021 GIDEON Informatics Inc
+
+Use of the GIDEON API requires a subscription to GIDEON (www.gideononine.com) and an API key.
+The code to access the API is provided as open source with the Mozilla Public License Version 2.0.
+
+
 Mozilla Public License Version 2.0
 ==================================
 
@@ -35,7 +43,7 @@ Mozilla Public License Version 2.0
     means any form of the work other than Source Code Form.
 
 1.7. "Larger Work"
-    means a work that combines Covered Software with other material, in 
+    means a work that combines Covered Software with other material, in
     a separate file or files, that is not Covered Software.
 
 1.8. "License"
