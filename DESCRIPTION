@@ -8,12 +8,13 @@ Description: GIDEON provides epidemiological data going back to 1348 AD. This
   package provides an interface with the GIDEON API to access its Infectous
   Disease database within R.
 URL: https://www.gideononline.com/
-License: Mozilla Public License Version 2.0
+License: file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports:
   dplyr,
   httr,
   jsonlite,
+  sp,
   rgdal
 RoxygenNote: 7.1.1

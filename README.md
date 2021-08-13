@@ -58,6 +58,9 @@ cholera_outbreaks <- outbreaks_by_disease(cholera_code)
 us_country_code <- lookup_gideon_id("countries", "United States")
 outbreaks_us_2007 <- outbreaks_by_country_year(us_country_code, 2007)
 
+outbreaks_2009 <- outbreaks_by_year(2009)
+to_geojson(outbreaks_2009, 'outbreaks2009.geojson')
+
 mosquito_vector_code <- lookup_gideon_id("vectors", "Mosquito")
 horse_reservoir_code <- lookup_gideon_id("reservoirs", "Horse")
 diseases_from_horses_via_mosquitos <- filter_diseases(
