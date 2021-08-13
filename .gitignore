@@ -48,5 +48,6 @@ Thumbs.db
 *.mov
 *.wmv
 
+*.geojson
 .Rhistory
 .Rproj.user

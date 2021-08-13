@@ -1,7 +1,7 @@
 Package: gideon
 Type: Package
 Title: GIDEON API Wrapper
-Version: 0.1.0
+Version: 0.2.0
 Author: Xander Hirsch
 Maintainer: GIDEON Informatics Inc <info@gideononline.com>
 Description: GIDEON provides epidemiological data going back to 1348 AD. This
@@ -14,5 +14,6 @@ LazyData: true
 Imports:
   dplyr,
   httr,
-  jsonlite
+  jsonlite,
+  rgdal
 RoxygenNote: 7.1.1
