@@ -89,3 +89,159 @@ lookup_gideon_id <- function(category, item = NULL, error_msg = TRUE) {
   }
 
 }
+
+#' GIDEON Disease Code Lookup
+#'
+#' Shortcut for \code{lookup_gideon_id("diseases", disease)}
+#'
+#' @param disease Name of disease
+#'
+#' @seealso \code{\link{lookup_gideon_id}}
+#'
+#' @export
+lookup_disease_id <- function(disease) {
+  lookup_gideon_id("diseases", disease)
+}
+
+#' GIDEON Drug Code Lookup
+#'
+#' Shortcut for \code{lookup_gideon_id("drugs", drug)}
+#'
+#' @param drug Name of drug
+#'
+#' @seealso \code{\link{lookup_gideon_id}}
+#'
+#' @export
+lookup_drug_id <- function(drug) {
+  lookup_gideon_id("drugs", drug)
+}
+
+#' GIDEON Vaccine Code Lookup
+#'
+#' Shortcut for \code{lookup_gideon_id("vaccines", vaccine)}
+#'
+#' @param vaccine Name of vaccine
+#'
+#' @seealso \code{\link{lookup_gideon_id}}
+#'
+#' @export
+lookup_vaccine_id <- function(vaccine) {
+  lookup_gideon_id("vaccines", vaccine)
+}
+
+#' GIDEON Agent Code Lookup
+#'
+#' Shortcut for \code{lookup_gideon_id("agents", agent)}
+#'
+#' @param agent Name of agent
+#'
+#' @seealso \code{\link{lookup_gideon_id}}
+#'
+#' @export
+lookup_agent_id <- function(agent) {
+  lookup_gideon_id("agents", agent)
+}
+
+#' GIDEON Vector Code Lookup
+#'
+#' Shortcut for \code{lookup_gideon_id("vectors", vector)}
+#'
+#' @param vector Name of vector
+#'
+#' @seealso \code{\link{lookup_gideon_id}}
+#'
+#' @export
+lookup_vector_id <- function(vector) {
+  lookup_gideon_id("vectors", vector)
+}
+
+#' GIDEON Vehicle Code Lookup
+#'
+#' Shortcut for \code{lookup_gideon_id("vehicles", vehicle)}
+#'
+#' @param vehicle Name of vehicle
+#'
+#' @seealso \code{\link{lookup_gideon_id}}
+#'
+#' @export
+lookup_vehicle_id <- function(vehicle) {
+  lookup_gideon_id("vehicles", vehicle)
+}
+
+#' GIDEON Reservoir Code Lookup
+#'
+#' Shortcut for \code{lookup_gideon_id("reservoirs", reservoir)}
+#'
+#' @param reservoir Name of reservoir
+#'
+#' @seealso \code{\link{lookup_gideon_id}}
+#'
+#' @export
+lookup_reservoir_id <- function(reservoir) {
+  lookup_gideon_id("reservoirs", reservoir)
+}
+
+#' GIDEON Bacteria Code Lookup
+#'
+#' Shortcut for \code{lookup_gideon_id("bacteria", bacteria)}
+#'
+#' @param bacteria Name of bacteria
+#'
+#' @seealso \code{\link{lookup_gideon_id}}
+#'
+#' @export
+lookup_bacteria_id <- function(bacteria) {
+  lookup_gideon_id("bacteria", bacteria)
+}
+
+#' GIDEON Mycobacteria Code Lookup
+#'
+#' Shortcut for \code{lookup_gideon_id("mycobacteria", mycobacteria)}
+#'
+#' @param mycobacteria Name of mycobacteria
+#'
+#' @seealso \code{\link{lookup_gideon_id}}
+#'
+#' @export
+lookup_mycobacteria_id <- function(mycobacteria) {
+  lookup_gideon_id("mycobacteria", mycobacteria)
+}
+
+#' GIDEON Yeast Code Lookup
+#'
+#' Shortcut for \code{lookup_gideon_id("yeasts", yeast)}
+#'
+#' @param yeast Name of yeast
+#'
+#' @seealso \code{\link{lookup_gideon_id}}
+#'
+#' @export
+lookup_yeast_id <- function(yeast) {
+  lookup_gideon_id("yeasts", yeast)
+}
+
+#' GIDEON Country Code Lookup
+#'
+#' Shortcut for \code{lookup_gideon_id("countries", country)}
+#'
+#' @param country Name of country
+#'
+#' @seealso \code{\link{lookup_gideon_id}}
+#'
+#' @export
+lookup_country_id <- function(country) {
+  lookup_gideon_id("countries", country)
+}
+
+#' GIDEON Region Code Lookup
+#'
+#' Shortcut for \code{lookup_gideon_id("regions", region)}
+#'
+#' @param region Name of region
+#'
+#' @seealso \code{\link{lookup_gideon_id}}
+#'
+#' @export
+lookup_region_id <- function(region) {
+  lookup_gideon_id("regions", region)
+}
