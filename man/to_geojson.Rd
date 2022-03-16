@@ -7,7 +7,8 @@
 to_geojson(
   dataframe,
   filename,
-  overwrite_layer = FALSE,
+  overwrite = FALSE,
+  pretty = FALSE,
   lat = "latitude",
   lon = "longitude"
 )
@@ -16,15 +17,21 @@ to_geojson(
 \item{dataframe}{An input dataframe to convert}
 
 \item{filename}{The exported filename, relative to the current working
-directory}
+directory. If the file already exists and overwrite is not set to TRUE,
+an error will be thrown}
 
-\item{overwrite_layer}{Indicates if an existing file in the current directory
-should be overwritten by the new file}
+\item{overwrite}{Indicates if an existing file in the current directory
+should be overwritten by the new file. Defaults to FALSE.}
 
-\item{lat}{The name of the column with latitude data}
+\item{pretty}{Indicates if file is formatted with whitespace as newlines,
+indentations and spaces to make the JSON data more readable.
+Defaults to FALSE.}
 
-\item{lon}{The name of the column with longitude data}
+\item{lat}{The name of the column with latitude data. Defaults to "latitude".}
+
+\item{lon}{The name of the column with longitude data. Defaults to "longitude".}
 }
 \description{
-Exports a dataframe to GeoJSON where latitude/longitude data is available
+Exports a dataframe to a GeoJSON file where latitude/longitude data is
+available.
 }
